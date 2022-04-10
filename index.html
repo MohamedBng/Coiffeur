@@ -1,0 +1,410 @@
+<!DOCTYPE html >
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Coiffeur</title>
+	<link rel="stylesheet" type="text/css" href="css/coiffeur.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css" integrity="sha512-3eoKq7cU6gdVeT+6eL40YcJLD8dxzQmOK54qxUWVjg7H4NN3u5AA5k5ywrqLV15hOZDBBgdQH/GK5CA9MwDVwg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light ">
+	
+  <div class="container-fluid">
+  	<img id="logoHeader" src="img/logo.jpg">
+    <a class="navbar-brand" href="index.html">Coiffure</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#salon">Le Salon</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="#realisation">Réalisations</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="#titrePrestation" tabindex="-1" aria-disabled="true">Préstations</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+	        </li>
+	      </ul>
+	    </div>
+  </div>
+</nav>
+</header>
+<div id="imageSalon">
+	<p><a href="#salon">Voir plus</a></p>
+	
+</div>
+<div id="salon">
+	<figure><img src="img/man-3263509_1280.png"></figure>
+	<div id="titreParagrapheSalon">
+		<h1>Welcome to Coiffure</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet arcu eros. Quisque augue lorem, tincidunt vitae imperdiet ac, volutpat quis massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque risus orci, porttitor eget pretium sit amet, ornare ut purus. Nullam eu fringilla velit. Proin eu risus ac metus semper laoreet ac non ligula. Nunc quis sapien at ante fringilla ultricies.</p>
+		<button onclick="window.location.href='#contact'" type="button" class="btn btn-lg">Contactez-nous</button>
+	</div>
+</div>
+<div class="realisationBg">
+<div id="realisation">
+	<h1>Nos réalisations</h1>
+	<div class="parent">
+	<div id="realisationUn">
+		<img src="img/thibault-debaene-djNwYinD6Pc-unsplash.jpg">
+	</div>
+	<div id="realisationDeux">
+		<img src="img/barber-3173419_1920.jpg">
+	</div>
+	</div>
+ <p id="viewMore" onclick="window.open('realisation.html')">View more</p>
+</div>
+</div>
+ 
+	<h1 id="titrePrestation">Nos Préstations</h1>
+<div id="prestations">
+
+<div class="card all text-center" >
+  <img style="width: 300px;
+	height: 250px;" src="img/jonathan-cooper-sS3qRFsKZlg-unsplash.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+  	<h5 class="card-title">Coupe</h5>
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#coupeModal">Tarifs</button>
+  </div>
+</div>
+
+
+<div class="card all text-center" >
+  <img style="width: 300px;
+	height: 250px;" src="img/mostafa-meraji-z2qyry-n-PA-unsplash.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+  	<h5 class="card-title">Coloration</h5>
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#colorationModal">Tarifs</button>
+  </div>
+</div>
+
+
+
+<div class="card all text-center" >
+  <img style="width: 300px;
+	height: 250px;" src="img/beard-1845166_640.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+  	<h5 class="card-title">Barbe</h5>
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#barbeModal">Tarifs</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Modal Coupe-->
+<div class="modal fade" id="coupeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tarifs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Enfant</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">15€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Coupe</li>
+              <li>Sechage/Gel</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Junior</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">18€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Coupe</li>
+              <li>Sechage/Gel</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Adulte</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">21€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Coupe</li>
+              <li>Sechage/Gel</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal Coloration -->
+<div class="modal fade" id="colorationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tarifs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Court</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">20€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Sechage</li>
+              <li>Couleur</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Mi-long</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">30€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Sechage</li>
+              <li>Couleur</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Long</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">40€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Sechage</li>
+              <li>Couleur</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal Barbe-->
+<div class="modal fade" id="barbeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tarifs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Classique</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">20€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Taille de barbe</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Elegant</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">30€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Rasage "à l'Ancienne"</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-white bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Prestige</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">50€</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Shampoing</li>
+              <li>Rasage "Bien-ètre" ou "Taille de barbe"</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Contactez-nous</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+            <div class="outer-container">
+                <h2 class="titreUn">Contactez-nous !</h2>
+                
+                <div class="spaceBetween">
+
+
+                    <div class="card text-center" style="margin-top: 5%; background-color:#c4c4c4;color:black; border-radius: 25px; width: 350px; padding: 2%;">
+									  		<div class="card-body">
+						    					<h5 class="card-title"><i style="font-size: 200%;" class="fa-solid fa-mobile-screen-button"></i></h5>
+						    					<p style="margin-top: 5%;"  class="card-text">0766696553</p>
+					 				      </div>
+			              </div>
+										<div class="card text-center" style="margin-top: 5%; background-color:black;  color: white; border-radius: 25px; width: 350px; padding: 2%;">
+			  								<div class="card-body">
+			    									<h5 class="card-title"><i style="font-size: 200%;" class="fa-regular fa-envelope"></i></h5>
+			    									<p style="margin-top: 5%;"  class="card-text"><a style="color:white; text-decoration: none;" href="mailto:mohamed.bengrich@outlook.fr">mohamed.bengrich@outlook.fr</a></p>
+			  								</div>
+										</div>
+ 								</div>
+
+            </div>
+ </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center text-md-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+          <iframe width="80%" height="200px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_711190?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>5 rue albert - 06000 Nice</li>
+		<li>0766695895</li>
+		<li>jean.b@outlook.fr</li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Horaires</h5>
+
+          <ul class="list-unstyled">
+            <li>Lundi: Sur rdv uniquement</li>
+		<li>Mardi: 08h00-18h00</li>
+		<li>Mercredi: 08h00-18h00</li>
+		<li>Jeudi: 08h00-18h00</li>
+		<li>Vendredi: 08h00-18h00</li>
+		<li>Samedi: Fermé</li>
+		<li>Dimanche: Fermé</li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://mohamedbng.github.io/Cv/">Mohamed Bengrich</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-7KzSt4AJ9bLchXCRllnyYUDjfhO2IFEWSa+a5/3kPGQbr+swRTorHQfyADAhSlVHCs1bpFdB1447ZRzFyiiXsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/lightgallery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/aos.js"></script>
+
+</body>
+</html>
